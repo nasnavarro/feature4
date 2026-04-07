@@ -36,6 +36,26 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav .nav-active {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  position: relative;
+  padding-bottom: 10px;
+  cursor: default;
+}
+
+nav .nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
 /* Menú Hamburguesa - Oculto por defecto */
 .menu-toggle {
   display: none;
@@ -117,6 +137,17 @@ nav a:hover::after {
 
   nav a:hover {
     color: var(--color-text-muted);
+  }
+
+  nav .nav-active {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-lg);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav .nav-active::after {
+    background-color: var(--color-text-muted);
   }
 
   nav a::after {
