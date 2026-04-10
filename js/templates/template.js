@@ -56,13 +56,6 @@ const renderNavMenu = (pagecode, menuItems) => {
   nav.id = 'main-nav';
   nav.setAttribute('aria-label', 'Menú principal');
 
-  if (pagecode !== 'index') {
-    const inicio = document.createElement('a');
-    inicio.href = './index.html';
-    inicio.textContent = 'Inicio';
-    nav.appendChild(inicio);
-  }
-
   menuItems.forEach(item => {
     if (pagecode === item.pagecode) {
       const span = document.createElement('span');
