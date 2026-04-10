@@ -8,6 +8,8 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -142,8 +144,10 @@ footer a:hover {
 /* Estilos para el título de la página */
 h1 {
   width: fit-content;
+  font-family: var(--font-family-display);
   font-size: var(--font-size-5xl);
-  font-weight: bold;
+  font-weight: var(--font-weight-black);
+  letter-spacing: -0.02em;
   color: var(--color-header-primary);
   padding-bottom: 10px;
   border-bottom: 3px solid var(--color-header-primary);
@@ -152,16 +156,19 @@ h1 {
 
 h2 {
   width: fit-content;
+  font-family: var(--font-family-display);
   font-size: var(--font-size-2xl);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.01em;
   color: var(--color-header-tertiary);
   margin-bottom: 1rem;
 }
 
 h3 {
   width: fit-content;
+  font-family: var(--font-family-display);
   font-size: var(--font-size-lg);
-  font-weight: bold;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-header-secondary);
   margin-bottom: 1rem;
 }
