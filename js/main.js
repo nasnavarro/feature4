@@ -27,3 +27,13 @@ const moonIcon = document.querySelector('.moon-icon');
 
 sunIcon.addEventListener('click', toggleDarkMode);
 moonIcon.addEventListener('click', toggleDarkMode);
+
+// Actualiza aria-expanded en la label y aria-hidden en el nav al abrir/cerrar hamburguesa
+const menuToggle = document.querySelector('.menu-toggle');
+const hamburgerLabel = document.querySelector('.hamburger');
+const mainNav = document.querySelector('#main-nav');
+
+menuToggle.addEventListener('change', () => {
+  hamburgerLabel.setAttribute('aria-expanded', menuToggle.checked);
+  mainNav.setAttribute('aria-hidden', !menuToggle.checked);
+});
