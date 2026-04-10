@@ -35,6 +35,7 @@
 
   /* Colores de interfaz - UI */
   --color-background: white;       /* Fondo principal */
+  --color-background-dark: #121212; /* Fondo principal en modo oscuro */
   --color-surface: #F8F9FA;        /* Fondo secundario/tarjetas */
   --color-overlay: rgba(0, 0, 0, 0.5); /* Overlay para modales */
   --color-border: #DEE2E6;         /* Bordes y divisores */

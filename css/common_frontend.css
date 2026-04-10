@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
 }
 
+body.dark-mode {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+}
+
 header {
   max-width: var(--max-width-global);
   margin: 0 auto;
@@ -27,6 +32,12 @@ header {
   padding: 10px;
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-surface);
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+body.dark-mode header{
+  background-color: #1E1E1E;
+  border-bottom: 1px solid var(--color-border);
   box-shadow: 0 2px 4px var(--color-shadow);
 }
 
